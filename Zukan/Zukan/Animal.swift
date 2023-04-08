@@ -20,7 +20,6 @@ class Animal {
     }
     
     func getImage() -> UIImage {
-        print(imageName)
         return UIImage(named: imageName)!
     }
 }
