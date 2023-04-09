@@ -20,12 +20,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func next() {
-        index = index + 1
+        if index == animalArray.count - 1 {
+            index = 0
+        } else {
+            index += 1
+        }
+        
         setUI()
     }
     
     @IBAction func back() {
-        index = index - 1
+        if index == 0 {
+            index = animalArray.count - 1
+        } else {
+            index -= 1
+        }
+
         setUI()
     }
     
