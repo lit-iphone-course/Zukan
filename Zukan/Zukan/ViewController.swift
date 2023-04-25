@@ -8,7 +8,7 @@ class ViewController: UIViewController {
 
     var animalArray: [Animal] = [
         Animal(name: "キリン", details: "アフリカのサバンナに住んでいる。舌がとても長い。頭に生えた角も特徴的。", imageName: "kirin.jpg"),
-        Animal(name: "キングペンギン", details: "オウサマペンギンとも呼ばれる。南極の島々に生息し、魚類やイカなどを食べる。", imageName: "penguin.jpg"),
+        Animal(name: "オウサマペンギン", details: "キングペンギンとも呼ばれる。南極の島々に生息し、魚類やイカなどを食べる。", imageName: "penguin.jpg"),
         Animal(name: "カンガルー", details: "オーストラリア固有の動物で、お腹に袋を持つ有袋類の一種。走るのが速い。", imageName: "kangaroo.jpg")
     ]
     var index: Int = 0
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
 
         setUI()
     }
+    
     
     func setUI() {
         imageView.image = animalArray[index].getImage()
